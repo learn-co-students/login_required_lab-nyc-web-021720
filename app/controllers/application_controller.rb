@@ -8,7 +8,10 @@ class ApplicationController < ActionController::Base
   def hello
     if !current_user then
       redirect_to "/login"
+    else
+      # render :blah
     end
+
   end
 
   def current_user
